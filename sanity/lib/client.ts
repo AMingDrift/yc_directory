@@ -7,5 +7,5 @@ export const client = createClient({
 	dataset,
 	apiVersion,
 	useCdn: false, // Set to false if statically generating pages, using ISR or tag-based revalidation
-	timeout: 30000,
+	timeout: 60000,
 });
