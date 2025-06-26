@@ -14,7 +14,8 @@
 	"packageManager": "npm@10.9.2",
 	"overrides": {
 		"react": "$react",
-		"react-dom": "$react-dom"
+		"react-dom": "$react-dom",
+		"next": "$next"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.2.3",
@@ -24,6 +25,7 @@
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"lucide-react": "^0.522.0",
+		"markdown-it": "^14.1.0",
 		"next": "^15.4.0-canary.96",
 		"next-auth": "^5.0.0-beta.29",
 		"next-sanity": "^9.12.0",
@@ -38,6 +40,7 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
+		"@types/markdown-it": "^14.1.2",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
