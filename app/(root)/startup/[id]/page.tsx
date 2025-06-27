@@ -19,35 +19,35 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
 	// TODO: Uncomment when the client is set up
 
-	// const post = await client.fetch(STARTUP_BY_ID_QUERY, { id });
+	const post = await client.fetch(STARTUP_BY_ID_QUERY, { id });
 
-	// console.log('Fetched post:', post);
+	console.log('Fetched post:', post);
 
-	const post = {
-		_createdAt: '2025-06-25T10:49:58Z',
-		_id: 'a3ce392b-637a-49c2-a584-e2d87961c1a5',
-		author: {
-			_id: 'c104d027-23af-4e67-9cad-9db7d9dfee3a',
-			bio: 'Next.js Enthusiast',
-			image:
-				'https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/logo-doubao-overflow.png',
-			name: 'WMC',
-			username: 'amingdrift',
-		},
-		category: 'Travel',
-		description:
-			'An online platform offering project-based learning for web developers.aimed at leveling up junior to mid-level developers by focusing on real-world applications',
-		image:
-			'https://jsmastery.com/_next/image?url=https%3A%2F%2Fjavascript-mastery.s3.amazonaws.com%2Fassets%2Fcontent%2Fcourses%2F1736834852750%2Ficon%2FThe%2520Ultimate%2520Next.js%252015%2520Course.png&w=640&q=75',
-		pitch:
-			'# This is great\n> hahaha\n\n- You are god!!!\n- We are akm\n\n```\njavascript\n```',
-		slug: {
-			_type: 'slug',
-			current: 'jsm-academy-masterclass-1',
-		},
-		title: 'JSM Academy Masterclass',
-		views: 1,
-	};
+	// const post = {
+	// 	_createdAt: '2025-06-25T10:49:58Z',
+	// 	_id: 'a3ce392b-637a-49c2-a584-e2d87961c1a5',
+	// 	author: {
+	// 		_id: 'c104d027-23af-4e67-9cad-9db7d9dfee3a',
+	// 		bio: 'Next.js Enthusiast',
+	// 		image:
+	// 			'https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/logo-doubao-overflow.png',
+	// 		name: 'WMC',
+	// 		username: 'amingdrift',
+	// 	},
+	// 	category: 'Travel',
+	// 	description:
+	// 		'An online platform offering project-based learning for web developers.aimed at leveling up junior to mid-level developers by focusing on real-world applications',
+	// 	image:
+	// 		'https://jsmastery.com/_next/image?url=https%3A%2F%2Fjavascript-mastery.s3.amazonaws.com%2Fassets%2Fcontent%2Fcourses%2F1736834852750%2Ficon%2FThe%2520Ultimate%2520Next.js%252015%2520Course.png&w=640&q=75',
+	// 	pitch:
+	// 		'# This is great\n> hahaha\n\n- You are god!!!\n- We are akm\n\n```\njavascript\n```',
+	// 	slug: {
+	// 		_type: 'slug',
+	// 		current: 'jsm-academy-masterclass-1',
+	// 	},
+	// 	title: 'JSM Academy Masterclass',
+	// 	views: 1,
+	// };
 
 	if (!post) return notFound();
 
